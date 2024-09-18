@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8"
+        <title>Форматирование</title>
+    </head>
+    <body>
+        <p>Параграф</p>
+        <p>...</p>
+        <p>...</p>
+        <script src=""></script>
+    </body>
+</html>

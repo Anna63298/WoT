@@ -1,0 +1,38 @@
+<!--
+Создать страницу отображающую содержание вторую и третью страницы своего паспорта.
+Личные данные (кроме фамилии,имени и года рождения)  можно изменить.
+Произвести получение из DOM  следующих данных: фамилия, имя, год рождения. (document.getElementsByTagName('p')[2].childNodes[1].innerText)
+Копию экрана браузера сохранить для будущего отчета. Название страница "DOM, JS. Считываем информацию из DOM"
+-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM, JS. Считываем информацию из DOM</title>
+</head>
+<body>
+    <p>ПАСПОРТ ВЫДАН: КОМСОМОЛЬСКИМ РУВД Г. ТОЛЬЯТТИ САМАРСКОЙ ОБЛАСТИ</p>
+    <p>ДАТА ВЫДАЧИ: 27.01.2001</p>
+    <p>СЕРИЯ: 2837</p>
+    <p>НОМЕР: 123-456</p>
+    <p>ФАМИЛИЯ: <span>РУКАВИШНИКОВА</span></p>
+    <p>ИМЯ: <span>АННА</span></p>
+    <p>ОТЧЕСТВО: АНДРЕЕВНА</p>
+    <p>ПОЛ: ЖЕН</p>
+    <p>ДАТА РОЖДЕНИЯ: <span>25.06.2005</span></p>
+    <p>МЕСТО РОЖДЕНИЯ: Г. МОСКВА</p>
+</body>
+<script>
+    let second_name = document.getElementsByTagName('span')[0].innerText 
+    console.log(second_name) 
+        <!--задали новую переменную, присвоили ей значение фамилии и считали переменную-->
+    let new_second_name = "123"
+    let second_name_node = document.getElementsByTagName('span')[0].innerText = new_second_name
+    console.log(second_name_node) 
+        <!--взяли две переменные, одной присвоили значение фамилии, 
+        другой - то, на что хотим поменять и присвоили одной значение второй, считали старую переменную с новым значением-->
+    document.getElementsByTagName('span')[1].innerText
+    document.getElementsByTagName('span')[2].innerText
+</script>
+</html>
