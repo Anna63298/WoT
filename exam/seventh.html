@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Велосипеды Aspect</title>
+    <style>
+        ul.nav{
+            margin-left: 10px;
+            padding-left: 10px;
+            list-style: none;
+        }
+        .nav li { 
+            float: left;
+        }
+        ul.nav a {
+            display: block;
+            width: 13em;
+            padding:10px;
+            margin: 5px;
+            background-color: #f4f4f4;
+            border: 1px solid #333;
+            text-decoration: none;
+            color: #333;
+            text-align: center;
+        }
+        ul.nav a:hover{
+            background-color: #8f2ed0;
+            color: #f4f4f4;
+        }
+
+        #a7{
+            background-color: #cd2727
+        }
+    </style>
+</head>
+<body>
+    <p id="header">
+        <ul class="nav">
+            <li id="a1"><a class="nav-link active" aria-current="page" href="first.html" target="_self">Главная</a></li>
+            <li><a aria-current="page" href="second.html" target="_self">О преимуществах Aspect</a></li>
+            <li><a href="third.html">Галерея</a></li>
+            <li><a href="fifth.html">Таблица моделей</a></li>
+            <li><a href="fourth.html">Оставить заявку на заказ</a></li>
+            <li id="a6"><a href="sixth.html">Паспорт</a></li>
+            <li id="a7"><a href="seventh.html">Изменение по событию</a></li>
+            <li><a href="eighth.html">Алгоритмическая задача 1</a></li>
+            <li><a href="nineth.html">Алгоритмическая задача 2</a></li>
+        </ul>
+    </p>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <p>ПАСПОРТ ВЫДАН: КОМСОМОЛЬСКИМ РУВД Г. ТОЛЬЯТТИ САМАРСКОЙ ОБЛАСТИ</p>
+    <p>ДАТА ВЫДАЧИ: 27.01.2001</p>
+    <p>СЕРИЯ: 2837</p>
+    <p>НОМЕР: 123-456</p>
+    <p>ФАМИЛИЯ: <span>РУКАВИШНИКОВА</span></p>
+    <p>ИМЯ: <span>АННА</span></p>
+    <p>ОТЧЕСТВО: <span>АНДРЕЕВНА</span></p>
+    <p>ПОЛ: ЖЕН</p>
+    <p>ДАТА РОЖДЕНИЯ: 25.06.2005</p>
+    <p>МЕСТО РОЖДЕНИЯ: Г. МОСКВА</p>
+
+
+    <br>
+    <p align="left"><img src="../images/second_dock.png" width="1000" alt="Изменение по событию"></p>
+    <p>Изменение по событию</p>
+
+</body>
+<script>
+    const second_name = document.getElementsByTagName('span')[0]
+
+    function change_sn(){
+        let new_second_name = "RUKAVISHNIKOVA"
+        let second_name_node = document.getElementsByTagName('span')[0].innerText = new_second_name
+        console.log(second_name_node)
+    }
+    
+    second_name.addEventListener('click', change_sn)
+
+    const first_name = document.getElementsByTagName('span')[1]
+
+    function change_fn(){
+        let new_first_name = "ANNA"
+    let first_name_node = document.getElementsByTagName('span')[1].innerText = new_first_name
+
+    }
+
+    first_name.addEventListener('click', change_fn)
+
+    const dad_name = document.getElementsByTagName('span')[2]
+
+    function change_dn(){
+        let new_dad_name = "ANDREEVNA"
+        let dad_name_node = document.getElementsByTagName('span')[2].innerText = new_dad_name
+    }
+
+    dad_name.addEventListener('click', change_dn)
+</script>
+
+</html>

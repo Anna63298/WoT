@@ -16,13 +16,40 @@
     <p>НОМЕР: 123-456</p>
     <p>ФАМИЛИЯ: <span>РУКАВИШНИКОВА</span></p>
     <p>ИМЯ: <span>АННА</span></p>
-    <p>ОТЧЕСТВО: АНДРЕЕВНА</p>
+    <p>ОТЧЕСТВО: <span>АНДРЕЕВНА</span></p>
     <p>ПОЛ: ЖЕН</p>
     <p>ДАТА РОЖДЕНИЯ: 25.06.2005</p>
     <p>МЕСТО РОЖДЕНИЯ: Г. МОСКВА</p>
 </body>
 <script>
-    document.getElementsByTagName('span')[0].innerText = 'RUKAVISHNIKOVA'
-    document.getElementsByTagName('span')[1].innerText = 'ANNA'
+    const second_name = document.getElementsByTagName('span')[0]
+
+    function change_sn(){
+        let new_second_name = "RUKAVISHNIKOVA"
+        let second_name_node = document.getElementsByTagName('span')[0].innerText = new_second_name
+        console.log(second_name_node)
+    }
+    
+    second_name.addEventListener('click', change_sn)
+
+    const first_name = document.getElementsByTagName('span')[1]
+
+    function change_fn(){
+        let new_first_name = "ANNA"
+    let first_name_node = document.getElementsByTagName('span')[1].innerText = new_first_name
+
+    }
+
+    first_name.addEventListener('click', change_fn)
+
+    const dad_name = document.getElementsByTagName('span')[2]
+
+    function change_dn(){
+        let new_dad_name = "ANDREEVNA"
+        let dad_name_node = document.getElementsByTagName('span')[2].innerText = new_dad_name
+    }
+
+    dad_name.addEventListener('click', change_dn)
+
 </script>
 </html>

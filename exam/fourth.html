@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Велосипеды Aspect</title>
+    <style>
+        #a4{
+            background-color: #cd2727
+        }
+        ul.nav{
+            margin-left: 10px;
+            padding-left: 10px;
+            list-style: none;
+        }
+        .nav li { 
+            float: left;
+        }
+        ul.nav a {
+            display: block;
+            width: 13em;
+            padding:10px;
+            margin: 5px;
+            background-color: #f4f4f4;
+            border: 1px solid #333;
+            text-decoration: none;
+            color: #333;
+            text-align: center;
+        }
+
+        ul.nav a:hover{
+            background-color: #19379a;
+            color: #f4f4f4;
+        }
+
+    </style>
+</head>
+<body>
+    <p id="header">
+        <ul class="nav">
+            <li><a href="first.html" target="_self">Главная</a></li>
+            <li><a href="second.html" target="_self">О преимуществах Aspect</a></li>
+            <li><a href="third.html">Галерея</a></li>
+            <li><a href="fifth.html">Таблица моделей</a></li>
+            <li id="a4"><a href="fourth.html">Оставить заявку на заказ</a></li>
+            <li><a href="sixth.html">Паспорт</a></li>
+            <li><a href="seventh.html">Изменение по событию</a></li>
+            <li><a href="eighth.html">Алгоритмическая задача 1</a></li>
+            <li><a href="nineth.html">Алгоритмическая задача 2</a></li>
+        </ul>
+    </p>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h1 align="center">Заинтересовали велосипеды? Оставьте заявку на заказ!</h1>
+
+<form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+    <p>Для поисковика:<input type="hidden"  name="q" value="search"></p>
+    <p>Фамилия: <input type="Text" name="last_name" size=20  value="Ivanov"></p>
+    <p>Имя: <input type="Text" name="first_name" size=20  value="Ivan"></p>
+    <p>Группа: <input type="Text" name="group" size=20  value="BRO2306"></p>
+    <p>Телефон: <input type="Text" name="phone" size=20  value="12345"></p>
+    <p>Электронка: <input type="Text" name="e-mail" size=20  value="a@ya.ru"></p>
+    <p>Дата: <input type="date" name="data" value="2024-10-02"></p>
+
+    <p>
+        <input type="Reset"  name="Reset"  value="Обновить">
+        <input type="Submit" name="submit"  value="Отправить">
+    </p>
+
+    <h1 align="center">Остались вопросы? Задайте их в форме ниже!</h1>
+
+    <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+        <p>Для поисковика:<input type="hidden"  name="q" value="search"></p>
+
+        <p>Выберите модель велосипеда</p>
+        <p>Городской<input type="checkbox" name="model-c" size=20  value="city" checked>  Горный<input type="checkbox" name="model-m" size=20  value="mount"></p>
+
+        <p>Количество колёс у велосипеда</p>
+        <p>2<input type="radio" name="count" size=20  value="2" checked>  3<input type="radio" name="count" size=20>  4<input type="radio" name="count" size=20></p>
+
+        <p>Укажите ваш возраст: <input type="number" name="age" size=20  value="18"></p>
+
+        <p>Введите пароль от личного кабинета: <input type="password" name="password" size=20  value="12345"></p>
+
+        <p>Введите комментарий: <input type="Text" name="question" size=20  value="Type smth..."></p>
+
+        <p>Дата: <input type="date" name="data" value="2024-10-02"></p>
+    
+        <p>
+            <input type="Reset"  name="Reset"  value="Обновить">
+            <input type="Submit" name="submit"  value="Отправить">
+        </p>
+    
+    </form>
+
+</form>
+    <!--<p><h1 align="center"><a href="#header">На начало страницы</a></h1></p>-->
+</body>
+</html>
