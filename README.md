@@ -1,1 +1,1 @@
-https://anna63298.github.io/WoT/first.html
+https://anna63298.github.io/WoT/exam/first.html
