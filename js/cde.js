@@ -1,16 +1,17 @@
 function verify() {
+    let place = parseInt(placeNumber.value)
     let error = ""
-    if (placeNumber < 54) {
-        if (placeNumber % 2) {
+    if (place < 54) {
+        if (place % 2) {
             console.log("нижнее место")
-            place = "нижнее место"
+            place1 = "нижнее место"
         }
         else {
             console.log("верхнее место")
-            place = "верхнее место"
+            place1 = "верхнее место"
         }
 
-        if (placeNumber < 37) {
+        if (place < 37) {
             console.log("купе")
             place2 = "купе"
         }
@@ -18,7 +19,7 @@ function verify() {
             console.log("боковое")
             place2 = "боковое"
         }
-        result = place + ", " + place2
+        result = place1 + ", " + place2
     check = true
     }
     else {
@@ -34,8 +35,6 @@ function verify() {
 
 function send() {
     if (check) {
-        let textCondition = document.getElementsByTagName('p')[0].innerText
-        document.getElementsByName('formulation')[0].value = textCondition;
         document.getElementsByName('result')[0].value = result;
         document.getElementById("UserEnter").submit();
     } else {
@@ -50,12 +49,10 @@ function verify_send() {
 
 const nodeTaskContent = document.getElementById("task_content");
 console.log(nodeTaskContent.innerText)
-task_content.addEventListener('input', verify)
 
-const nodePlaceNumber = document.getElementById("placeNumber");
-console.log("Номер места:", nodePlaceNumber.innerText)
-var placeNumber = nodePlaceNumber.innerText
-placeNumber.addEventListener('keyup', verify)
+const nodePlaceNumber = document.getElementsByName("placeNumber")[0];
+console.log("Номер места:", nodePlaceNumber.value)
+var placeNumber = nodePlaceNumber.value
 
 const nodeResult = document.getElementById("result");
 console.log("Результат: ", nodeResult.innerText)
