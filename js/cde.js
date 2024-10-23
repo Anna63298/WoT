@@ -47,10 +47,10 @@ function verify_send() {
     send();
 }
 
-const nodeTaskContent = document.getElementById("task_content");
-console.log(nodeTaskContent.innerText)
+const nodeTaskContent = document.getElementsByName("task_content")[0];
+console.log(nodeTaskContent.value)
 
-const nodePlaceNumber = document.getElementsByName("placeNumber")[0];
+const nodePlaceNumber = document.getElementById("placeNumber");
 console.log("Номер места:", nodePlaceNumber.value)
 var placeNumber = nodePlaceNumber.value
 
