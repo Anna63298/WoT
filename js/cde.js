@@ -1,5 +1,6 @@
 function verify() {
-    let place = parseInt(placeNumber.value)
+    var place = parseInt(nodePlaceNumber.value)
+
     let error = ""
     if (place < 54) {
         if (place % 2) {
@@ -54,13 +55,14 @@ const nodePlaceNumber = document.getElementById("placeNumber");
 console.log("Номер места:", nodePlaceNumber.value)
 var placeNumber = nodePlaceNumber.value
 
-const nodeResult = document.getElementById("result");
-console.log("Результат: ", nodeResult.innerText)
-result.addEventListener('keyup', verify)
+var check
+
+const nodeResult = document.getElementsByName("result")[0];
+console.log("Результат: ", nodeResult.value)
+nodeResult.addEventListener('keyup', verify)
 
 const elementVerify = document.getElementById("verify");
 elementVerify.addEventListener('click', verify);
 
 const elementSend = document.getElementById("send");
 elementSend.addEventListener('click', send)
-  
