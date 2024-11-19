@@ -43,8 +43,8 @@ body {
 }
 
 .sidebar {
-    width: 25em;
-    height: 25em;
+    width: 30em;
+    height: 30em;
     position: relative;
     border-style: double;
     float: left;
@@ -56,8 +56,8 @@ body {
 }
 
 .sidebar1 {
-    width: 25em;
-    height: 25em;
+    width: 30em;
+    height: 30em;
     position: relative;
     border-style: double;
     float: right;
