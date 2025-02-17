@@ -1,0 +1,100 @@
+.header{
+    background-color: #030303;
+    color: #f1f1f1;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+.nav{
+    margin-left: 10px;
+    padding-left: 10px;
+    list-style: none;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.nav li { 
+    float: left;
+}
+.nav a {
+    display: block;
+    width: 13em;
+    height: 4em;
+    padding:10px;
+    margin: 5px;
+    background-color: #f1f1f1;
+    border: 1px solid #333;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+}
+.nav a:hover{
+    background-color: #d1b4f7;
+    color: #f4f4f4;
+}
+
+.list {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 1%;
+}
+
+#svechi{
+    float: right; 
+    margin-left: 3%;
+}
+
+p{
+    padding-top: 1.5%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+ol{
+    margin-left: 1%;
+    margin-right: 3%;
+}
+
+
+#y{
+    display: block;
+    height: 1em;
+    margin-top: 0;
+}
+
+#w{
+    background-color: #030303;
+    color: #f1f1f1;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+#s{
+    color: #ffffff;
+}
+
+body{
+    background-color: #f1f1f1;
+}
+
+table{
+    margin: 0;
+    width: 100%;;
+}
+
+div{
+    margin: 0;
+    width: 100%;
+
+}
+
+th{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+td{
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
