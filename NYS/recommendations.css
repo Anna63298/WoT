@@ -1,0 +1,62 @@
+.header{
+    background-color: #030303;
+    color: #f1f1f1;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+p {
+    padding-block: 1.5%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.nav{
+    margin-left: 10px;
+    padding-left: 10px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.nav li { 
+    float: left;
+}
+.nav a {
+    display: block;
+    width: 13em;
+    height: 4em;
+    padding:10px;
+    padding-bottom: none;
+    margin: 5px;
+    margin-bottom: none;
+    background-color: #f1f1f1;
+    border: 1px solid #333;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+}
+.nav a:hover{
+    background-color: #d1b4f7;
+    color: #f4f4f4;
+}
+
+.researchers{
+    align-self: center;
+    padding-left: 50%;
+    margin: 3%;
+}
+
+div{
+    margin: 2%;
+}
+
+#daymnesil{
+    display: block;
+    margin: 1%;
+    float: right;
+    margin-right: 2%;
+}
+
+#zakonchitsa{
+    margin: 2%;
+    padding-right: 1%;
+}

@@ -1,0 +1,51 @@
+[
+    {
+      "id": "1",
+      "title": "Товар 1",
+      "vendor_code": "111",
+      "description": "Горный велосипед",
+      "price": 100,
+      "img": "../../images/gorniy.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Товар 2",
+      "vendor_code": "222",
+      "description": "Городской велосипед",
+      "price": 200,
+      "img": "../../images/gorodskoy.png"
+    },
+    {
+      "id": "3",
+      "title": "Товар 3",
+      "vendor_code": "333",
+      "description": "2-колёсный велосипед",
+      "price": 300,
+      "img": "../../images/bicycle 3.jpg"
+    },
+    {
+      "id": "4",
+      "title": "Товар 4",
+      "vendor_code": "444e",
+      "description": "3-колёсный велосипед",
+      "price": 400,
+      "img": "../../images/3wheel.jpg"
+    }
+    ,
+    {
+      "id": "5",
+      "title": "Товар 5",
+      "vendor_code": "4445e",
+      "description": "4-колёсный велосипед",
+      "price": 400,
+      "img": "../../images/4wheel.jpg"
+    },
+    {
+      "id": "6",
+      "title": "Товар 6",
+      "vendor_code": "4446e",
+      "description": "Ваш будущий велосипед",
+      "price": 400,
+      "img": "../images/bicycle.webp"
+    }
+]
